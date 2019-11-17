@@ -21,7 +21,9 @@
 #include "time.h"
 #include "cJSON.h"
 
-#define MOTOR_4K4R
+#define CLOUD_SERV
+
+#define NLIGHT_6K4R
 /* 
 #define NLIGHT_4K4R
 #define NLIGHT_6K4R
