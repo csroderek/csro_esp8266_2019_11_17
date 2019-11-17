@@ -235,6 +235,7 @@ void csro_airmon_on_connect(esp_mqtt_event_handle_t event)
         sprintf(value_template, "{{value_json.%s | round(%d)}}", itemlist[i], roundlist[i]);
         cJSON *config_json = cJSON_CreateObject();
         cJSON_AddStringToObject(config_json, "~", prefix);
+        cJSON_AddStringToObject(config_json, "unique_id", name);
         cJSON_AddStringToObject(config_json, "name", name);
         cJSON_AddStringToObject(config_json, "unit_of_meas", unitlist[i]);
         cJSON_AddStringToObject(config_json, "avty_t", "~/available");
